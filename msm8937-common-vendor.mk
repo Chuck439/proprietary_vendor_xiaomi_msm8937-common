@@ -528,7 +528,19 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     android.hardware.gnss@2.0-service-qti \
-    vendor.qti.gnss@3.0-service
+    vendor.qti.gnss@3.0-service \
+    manifest_android.hardware.drm@1.3-service.widevine \
+    imssettings \
+    uceShimService \
+    com.qualcomm.qti.imscmservice-V2.0-java \
+    com.qualcomm.qti.imscmservice-V2.1-java \
+    com.qualcomm.qti.uceservice-V2.0-java \
+    embmslibrary \
+    qcrilhook \
+    uimlpalibrary \
+    uimremotesimlocklibrary \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.ims.rcsconfig-V1.0-java
 
 # Newly added libOmx* libs
 PRODUCT_COPY_FILES += \
