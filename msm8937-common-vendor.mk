@@ -327,7 +327,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsSDP.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib64//lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcs-v2.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsbaseimpl.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtcore.so \
@@ -504,7 +504,147 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libthermalfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalfeature.so
+    vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libthermalfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalfeature.so \
+    chuck/proprietary/lib/libmmrtpdecoder.so:$(saistem)/lib/libmmrtpdecoder.so \
+    chuck/proprietary/lib/libmmrtpencoder.so:$(saistem)/lib/libmmrtpencoder.so \
+    chuck/proprietary/lib/librtp_jni.so:$(saistem)/lib/librtp_jni.so \
+    chuck/proprietary/lib64/libmmrtpdecoder.so:$(saistem)/lib64/libmmrtpdecoder.so \
+    chuck/proprietary/lib64/libmmrtpencoder.so:$(saistem)/lib64/libmmrtpencoder.so \
+    chuck/proprietary/lib64/librtp_jni.so:$(saistem)/lib64/librtp_jni.so \
+    chuck/proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk:$(sysex)/app/QtiTelephonyService/QtiTelephonyService.apk \
+    chuck/proprietary/system_ext/app/imssettings/imssettings.apk:$(sysex)/app/imssettings/imssettings.apk \
+    chuck/proprietary/system_ext/app/uceShimService/uceShimService.apk:$(sysex)/app/uceShimService/uceShimService.apk \
+    chuck/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(sysex)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    chuck/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(sysex)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+    chuck/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(sysex)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
+    chuck/proprietary/system_ext/etc/permissions/lpa.xml:$(sysex)/etc/permissions/lpa.xml \
+    chuck/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(sysex)/etc/permissions/qti_permissions.xml \
+    chuck/proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:$(sysex)/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    chuck/proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:$(sysex)/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    chuck/proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:$(sysex)/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
+    chuck/proprietary/system_ext/framework/embmslibrary.jar:$(sysex)/framework/embmslibrary.jar \
+    chuck/proprietary/system_ext/framework/qcrilhook.jar:$(sysex)/framework/qcrilhook.jar \
+    chuck/proprietary/system_ext/framework/uimlpalibrary.jar:$(sysex)/framework/uimlpalibrary.jar \
+    chuck/proprietary/system_ext/framework/uimremotesimlocklibrary.jar:$(sysex)/framework//uimremotesimlocklibrary.jar \
+    chuck/proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar:$(sysex)/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
+    chuck/proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:$(sysex)/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
+    chuck/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so:$(sysex)/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    chuck/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.0.so:$(sysex)/lib/com.qualcomm.qti.imscmservice@2.0.so \
+    chuck/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.1.so:$(sysex)/lib/com.qualcomm.qti.imscmservice@2.1.so \
+    chuck/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.2.so:$(sysex)/lib/com.qualcomm.qti.imscmservice@2.2.so \
+    chuck/proprietary/system_ext/lib/libdiag_system.so:$(sysex)/lib/libdiag_system.so \
+    chuck/proprietary/system_ext/lib/libqmi_cci_system.so:$(sysex)/lib/libqmi_cci_system.so \
+    chuck/proprietary/system_ext/lib/vendor.qti.ims.callinfo@1.0.so:$(sysex)/lib/vendor.qti.ims.callinfo@1.0.so \
+    chuck/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@1.0.so:$(sysex)/lib/vendor.qti.ims.rcsconfig@1.0.so \
+    chuck/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(sysex)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    chuck/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(sysex)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
+    chuck/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(sysex)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
+    chuck/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(sysex)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
+    chuck/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so:$(sysex)/lib64/com.qualcomm.qti.uceservice@2.0.so \
+    chuck/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so:$(sysex)/lib64/com.qualcomm.qti.uceservice@2.2.so \
+    chuck/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(sysex)/lib64/lib-imsvideocodec.so \
+    chuck/proprietary/system_ext/lib64/lib-imsvt.so:$(sysex)/lib64/lib-imsvt.so \
+    chuck/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(sysex)/lib64/lib-imsvtextutils.so \
+    chuck/proprietary/system_ext/lib64/lib-imsvtutils.so:$(sysex)/lib64/lib-imsvtutils.so \
+    chuck/proprietary/system_ext/lib64/libdiag_system.so:$(sysex)/lib64/libdiag_system.so \
+    chuck/proprietary/system_ext/lib64/libqmi_cci_system.so:$(sysex)/lib64/libqmi_cci_system.so \
+    chuck/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(sysex)/lib64/vendor.qti.diaghal@1.0.so \
+    chuck/proprietary/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(sysex)/lib64/vendor.qti.ims.callinfo@1.0.so \
+    chuck/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(sysex)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    chuck/proprietary/system_ext/priv-app/ims/ims.apk:$(sysex)/priv-app/ims/ims.apk \
+    chuck/proprietary/vendor/bin/adpl:$(bendor)/bin/adpl \
+    chuck/proprietary/vendor/bin/hw/qcrild:$(bendor)/bin/hw/qcrild \
+    chuck/proprietary/vendor/bin/imsdatadaemon:$(bendor)/bin/imsdatadaemon \
+    chuck/proprietary/vendor/bin/imsqmidaemon:$(bendor)/bin/imsqmidaemon \
+    chuck/proprietary/vendor/bin/netmgrd:$(bendor)/bin/netmgrd \
+    chuck/proprietary/vendor/bin/wcnss_service:$(bendor)/bin/wcnss_service \
+    chuck/proprietary/vendor/etc/data/dsi_config.xml:$(bendor)/etc/data/dsi_config.xml \
+    chuck/proprietary/vendor/etc/data/netmgr_config.xml:$(bendor)/etc/data/netmgr_config.xml \
+    chuck/proprietary/vendor/etc/init/qcrild.rc:$(bendor)/etc/init/qcrild.rc \
+    chuck/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(bendor)/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    chuck/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(bendor)/lib/com.qualcomm.qti.imscmservice@2.0.so \
+    chuck/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.1.so:$(bendor)/lib/com.qualcomm.qti.imscmservice@2.1.so \
+    chuck/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.2.so:$(bendor)/lib/com.qualcomm.qti.imscmservice@2.2.so \
+    chuck/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.0.so:$(bendor)/lib/com.qualcomm.qti.uceservice@2.0.so \
+    chuck/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.1.so:$(bendor)/lib/com.qualcomm.qti.uceservice@2.1.so \
+    chuck/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.2.so:$(bendor)/lib/com.qualcomm.qti.uceservice@2.2.so \
+    chuck/proprietary/vendor/lib/lib-imsSDP.so:$(bendor)/lib/lib-imsSDP.so \
+    chuck/proprietary/vendor/lib/lib-imscmservice.so:$(bendor)/lib/lib-imscmservice.so \
+    chuck/proprietary/vendor/lib/lib-imsdpl.so:$(bendor)/lib/lib-imsdpl.so \
+    chuck/proprietary/vendor/lib/lib-imsqimf.so:$(bendor)/lib/lib-imsqimf.so \
+    chuck/proprietary/vendor/lib/lib-imsrcs-v2.so:$(bendor)/lib/lib-imsrcs-v2.so \
+    chuck/proprietary/vendor/lib/lib-imsrcsbaseimpl.so:$(bendor)/lib/lib-imsrcsbaseimpl.so \
+    chuck/proprietary/vendor/lib/lib-imsxml.so:$(bendor)/lib/lib-imsxml.so \
+    chuck/proprietary/vendor/lib/lib-rtpcommon.so:$(bendor)/lib/lib-rtpcommon.so \
+    chuck/proprietary/vendor/lib/lib-rtpcore.so:$(bendor)/lib/lib-rtpcore.so \
+    chuck/proprietary/vendor/lib/lib-rtpsl.so:$(bendor)/lib/lib-rtpsl.so \
+    chuck/proprietary/vendor/lib/lib-siputility.so:$(bendor)/lib/lib-siputility.so \
+    chuck/proprietary/vendor/lib/lib-uceservice.so:$(bendor)/lib/lib-uceservice.so \
+    chuck/proprietary/vendor/lib/libdsi_netctrl.so:$(bendor)/lib/libdsi_netctrl.so \
+    chuck/proprietary/vendor/lib/libdsutils.so:$(bendor)/lib/libdsutils.so \
+    chuck/proprietary/vendor/lib/libidl.so:$(bendor)/lib/libidl.so \
+    chuck/proprietary/vendor/lib/libnetmgr_nr_fusion.so:$(bendor)/lib/libnetmgr_nr_fusion.so \
+    chuck/proprietary/vendor/lib/libnetmgr_rmnet_ext.so:$(bendor)/lib/libnetmgr_rmnet_ext.so \
+    chuck/proprietary/vendor/lib/liboemaids_vendor.so:$(bendor)/lib/liboemaids_vendor.so \
+    chuck/proprietary/vendor/lib/libpdnotifier.so:$(bendor)/lib/libpdnotifier.so \
+    chuck/proprietary/vendor/lib/libqcrilFramework.so:$(bendor)/lib/libqcrilFramework.so \
+    chuck/proprietary/vendor/lib/libqdi.so:$(bendor)/lib/libqdi.so \
+    chuck/proprietary/vendor/lib/libqdp.so:$(bendor)/lib/libqdp.so \
+    chuck/proprietary/vendor/lib/libqmi.so:$(bendor)/lib/libqmi.so \
+    chuck/proprietary/vendor/lib/libqmiservices.so:$(bendor)/lib/libqmiservices.so \
+    chuck/proprietary/vendor/lib/libqsocket.so:$(bendor)/lib/libqsocket.so \
+    chuck/proprietary/vendor/lib/librcc.so:$(bendor)/lib/librcc.so \
+    chuck/proprietary/vendor/lib/libril-qc-hal-qmi.so:$(bendor)/lib/libril-qc-hal-qmi.so \
+    chuck/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(bendor)/lib/libril-qcril-hook-oem.so \
+    chuck/proprietary/vendor/lib/libsettings.so:$(bendor)/lib/libsettings.so \
+    chuck/proprietary/vendor/lib/libsystem_health_mon.so:$(bendor)/lib/libsystem_health_mon.so \
+    chuck/proprietary/vendor/lib/qcrild_librilutils.so:$(bendor)/lib/qcrild_librilutils.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.am@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.ims@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.1.so:$(bendor)/lib/vendor.qti.hardware.radio.ims@1.1.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.2.so:$(bendor)/lib/vendor.qti.hardware.radio.ims@1.2.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.3.so:$(bendor)/lib/vendor.qti.hardware.radio.ims@1.3.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.4.so:$(bendor)/lib/vendor.qti.hardware.radio.ims@1.4.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(bendor)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.uim@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.1.so:$(bendor)/lib/vendor.qti.hardware.radio.uim@1.1.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(bendor)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.ims.callcapability@1.0.so:$(bendor)/lib/vendor.qti.ims.callcapability@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.ims.callinfo@1.0.so:$(bendor)/lib/vendor.qti.ims.callinfo@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.ims.factory@1.0.so:$(bendor)/lib/vendor.qti.ims.factory@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.0.so:$(bendor)/lib/vendor.qti.ims.rcsconfig@1.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@2.0.so:$(bendor)/lib/vendor.qti.ims.rcsconfig@2.0.so \
+    chuck/proprietary/vendor/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(bendor)/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so \
+    chuck/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(bendor)/lib64/com.qualcomm.qti.uceservice@2.2.so \
+    chuck/proprietary/vendor/lib64/libconfigdb.so:$(bendor)/lib64/libconfigdb.so \
+    chuck/proprietary/vendor/lib64/libdsi_netctrl.so:$(bendor)/lib64/libdsi_netctrl.so \
+    chuck/proprietary/vendor/lib64/libdsutils.so:$(bendor)/lib64/libdsutils.so \
+    chuck/proprietary/vendor/lib64/libidl.so:$(bendor)/lib64/libidl.so \
+    chuck/proprietary/vendor/lib64/liblqe.so:$(bendor)/lib64/liblqe.so \
+    chuck/proprietary/vendor/lib64/libnetmgr.so:$(bendor)/lib64/libnetmgr.so \
+    chuck/proprietary/vendor/lib64/libnetmgr_common.so:$(bendor)/lib64/libnetmgr_common.so \
+    chuck/proprietary/vendor/lib64/libnlnetmgr.so:$(bendor)/lib64/libnlnetmgr.so \
+    chuck/proprietary/vendor/lib64/libqcmaputils.so:$(bendor)/lib64/libqcmaputils.so \
+    chuck/proprietary/vendor/lib64/libqcrilFramework.so:$(bendor)/lib64/libqcrilFramework.so \
+    chuck/proprietary/vendor/lib64/libqdi.so:$(bendor)/lib64/libqdi.so \
+    chuck/proprietary/vendor/lib64/libqdp.so:$(bendor)/lib64/libqdp.so \
+    chuck/proprietary/vendor/lib64/libqmi.so:$(bendor)/lib64/libqmi.so \
+    chuck/proprietary/vendor/lib64/libqmiservices.so:$(bendor)/lib64/libqmiservices.so \
+    chuck/proprietary/vendor/lib64/libqrtr.so:$(bendor)/lib64/libqrtr.so \
+    chuck/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(bendor)/lib64/libril-qc-hal-qmi.so \
+    chuck/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(bendor)/lib64/libril-qc-ltedirectdisc.so \
+    chuck/proprietary/vendor/lib64/librilqmiservices.so:$(bendor)/lib64/librilqmiservices.so \
+    chuck/proprietary/vendor/lib64/qcrild_librilutils.so:$(bendor)/lib64/qcrild_librilutils.so \
+    chuck/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(bendor)/lib64/vendor.qti.ims.callcapability@1.0.so \
+    chuck/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(bendor)/lib64/vendor.qti.ims.factory@1.0.so \
+    chuck/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(bendor)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
+    chuck/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(bendor)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
+    chuck/proprietary/vendor/radio/qcril_database/qcril.db:$(bendor)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
     libaudio_log_utils \
